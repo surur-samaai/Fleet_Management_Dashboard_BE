@@ -1,1 +1,37 @@
-node_modules
+# Dependencies
+/node_modules
+/dist
+/build
+
+# TypeScript / Compilation Artifacts
+*.tsbuildinfo
+
+# IDE specific files
+.vscode
+.idea
+
+# Environment / Configuration Files (CRITICAL for security)
+.env
+.env.development
+.env.production
+serviceAccountKey.json 
+*.pem
+*.key
+
+# npm / Package Manager Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Mac Files
+.DS_Store
+
+# Logs
+log
+*.log
+
+# Testing / Coverage
+/coverage
+# Credentials and secrets
+serviceAccountKey.json
