@@ -1,11 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    /* Basic Options */
+    "target": "es2020",                            /* Specify ECMAScript target version */
+    "module": "commonjs",                          /* Specify module code generation */
+    "rootDir": "./src",                            /* Specify the root directory of source files. Crucial for path resolution. */
+    "outDir": "./dist",                            /* Redirect output structure to this directory */
+
+    /* Strict Type-Checking Options */
+    "strict": true,                                /* Enable all strict type-checking options */
+    "esModuleInterop": true,                       /* Enables compatibility for default imports (fixes 'express' import issues) */
+    "skipLibCheck": true,                          /* Skip type checking of declaration files (*.d.ts) */
+    "forceConsistentCasingInFileNames": true,      /* Ensures paths and filenames are consistent. */
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",                    /* Key to correctly resolve modules from node_modules */
+    "resolveJsonModule": true,                     /* Allows importing modules with a '.json' extension */
+    "baseUrl": ".",                                /* Base directory to resolve non-relative module names */
+    
+    // If you plan to use local path aliases (e.g., import { X } from '@interfaces/X'), you'd add "paths" here.
+  },
+  "include": [
+    "src/**/*"                                     /* Include all files inside the src directory */
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
