@@ -1,37 +1,70 @@
 # Dependencies
 /node_modules
+
+# Build outputs
 /dist
 /build
+/out
 
 # TypeScript / Compilation Artifacts
 *.tsbuildinfo
 
-# IDE specific files
-.vscode
-.idea
+# IDE/editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
 
 # Environment / Configuration Files (CRITICAL for security)
 .env
+.env.*.local
+*.local.env
 .env.development
 .env.production
-serviceAccountKey.json 
+
+# Keys and certificates
 *.pem
 *.key
+*.crt
+*.pfx
+serviceAccountKey.json
+# Firebase service accounts (very sensitive)
+*-firebase-adminsdk-*.json
+serviceAccount*.json
+firebase-service-account*.json
+fleetpro-9959f-firebase-adminsdk-fbsvc-6a2f8490d3.json
 
-# npm / Package Manager Files
+# Package manager logs and state
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+.npm/
 
-# Mac Files
+# OS files
 .DS_Store
+Thumbs.db
 
 # Logs
 log
 *.log
+logs/
+
+# Firebase/Emulator local artifacts
+firebase-debug.log
+firestore-debug.log
+.firebase/
+emulator-data/
+storage_debug.log
+firestore_export/
+.runtimeconfig.json
 
 # Testing / Coverage
 /coverage
-# Credentials and secrets
-fleetpro-9959f-firebase-adminsdk-fbsvc-6a2f8490d3.json
+
+# Tooling metadata
+.qodo/
