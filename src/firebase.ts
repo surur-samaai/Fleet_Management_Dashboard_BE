@@ -1,6 +1,12 @@
 // src/firebase.ts
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import admin from 'firebase-admin';
+=======
+
+import * as admin from 'firebase-admin';
+import service_account from '../fleetpro-9959f-firebase-adminsdk-fbsvc-6a2f8490d3.json'
+>>>>>>> Stashed changes
 =======
 
 import * as admin from 'firebase-admin';
